@@ -31,6 +31,7 @@ import { XLargeDirective } from './home/x-large';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
+import {UserModule} from "./user/user.module";
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -60,6 +61,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    UserModule,
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

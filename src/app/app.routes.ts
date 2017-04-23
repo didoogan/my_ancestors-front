@@ -11,5 +11,7 @@ export const ROUTES: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'detail', loadChildren: './+detail#DetailModule'},
   { path: 'barrel', loadChildren: './+barrel#BarrelModule'},
-  { path: '**',    component: NoContentComponent },
+  { path: 'user', loadChildren: './user#UserModule'},
+
+  { path: '**',    component: NoContentComponent }
 ];
